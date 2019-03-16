@@ -53,8 +53,16 @@ var createBoard = function() {
 	}
 }
 
+var resetPage = function() {
+	var resetButton = document.getElementById('button');
+	resetButton.addEventListener('click', resetPage);
+	window.parent.location = window.parent.location.href;
+};
+
 
 createBoard();
+
+
 
 
 
